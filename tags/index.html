@@ -109,8 +109,8 @@
       applicationID: '',
       apiKey: '',
       indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+      hits: "",
+      labels: ""
     }
   };
 </script>
@@ -289,10 +289,10 @@
         
           <div class="tag-cloud">
             <div class="tag-cloud-title">
-                暂无标签
+                目前共计 1 个标签
             </div>
             <div class="tag-cloud-tags">
-              
+              <a href="/tags/%E5%88%86%E5%B8%83%E5%BC%8F%E5%8E%9F%E7%90%86/" style="font-size: 12px; color: #ccc">分布式原理</a>
             </div>
           </div>
         
@@ -352,14 +352,32 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
             
 
             
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
             
 
           </nav>

@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="分布式原理," />
 
 
 
@@ -79,13 +79,15 @@
 
 
 
-<meta name="description" content="thinking,running">
-<meta property="og:type" content="website">
-<meta property="og:title" content="geek time">
-<meta property="og:url" content="https:&#x2F;&#x2F;jiwliu.github.io&#x2F;index.html">
+<meta name="description" content="分布式系统设计知识点1. 理论 CAP BASE 常用一致性算法 Raft Gossip Paxos ZAB   可用性 负载均衡 分片 主副本">
+<meta name="keywords" content="分布式原理">
+<meta property="og:type" content="article">
+<meta property="og:title" content="分布式系统知识点汇总">
+<meta property="og:url" content="https:&#x2F;&#x2F;jiwliu.github.io&#x2F;2019&#x2F;11&#x2F;26&#x2F;%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F%E7%9F%A5%E8%AF%86%E7%82%B9%E6%B1%87%E6%80%BB&#x2F;index.html">
 <meta property="og:site_name" content="geek time">
-<meta property="og:description" content="thinking,running">
+<meta property="og:description" content="分布式系统设计知识点1. 理论 CAP BASE 常用一致性算法 Raft Gossip Paxos ZAB   可用性 负载均衡 分片 主副本">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-11-26T09:19:50.650Z">
 <meta name="twitter:card" content="summary">
 
 
@@ -116,13 +118,13 @@
 
 
 
-  <link rel="canonical" href="https://jiwliu.github.io/"/>
+  <link rel="canonical" href="https://jiwliu.github.io/2019/11/26/分布式系统知识点汇总/"/>
 
 
 
 
 
-  <title>geek time</title>
+  <title>分布式系统知识点汇总 | geek time</title>
   
 
 
@@ -141,8 +143,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -267,9 +268,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -299,9 +300,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/11/26/%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F%E7%9F%A5%E8%AF%86%E7%82%B9%E6%B1%87%E6%80%BB/" itemprop="url">分布式系统知识点汇总</a></h1>
+          <h1 class="post-title" itemprop="name headline">分布式系统知识点汇总</h1>
         
 
         <div class="post-meta">
@@ -384,8 +383,7 @@
       
 
       
-        
-          <h2 id="分布式系统设计知识点"><a href="#分布式系统设计知识点" class="headerlink" title="分布式系统设计知识点"></a>分布式系统设计知识点</h2><h3 id="1-理论"><a href="#1-理论" class="headerlink" title="1. 理论"></a>1. 理论</h3><ol>
+        <h2 id="分布式系统设计知识点"><a href="#分布式系统设计知识点" class="headerlink" title="分布式系统设计知识点"></a>分布式系统设计知识点</h2><h3 id="1-理论"><a href="#1-理论" class="headerlink" title="1. 理论"></a>1. 理论</h3><ol>
 <li>CAP</li>
 <li>BASE</li>
 <li>常用一致性算法<ol>
@@ -398,15 +396,111 @@
 <li>可用性<ol>
 <li>负载均衡</li>
 <li>分片</li>
-<li>主副本
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/11/26/%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F%E7%9F%A5%E8%AF%86%E7%82%B9%E6%B1%87%E6%80%BB/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+<li>主副本<a id="more"></a>
+
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="2-分布式架构"><a href="#2-分布式架构" class="headerlink" title="2. 分布式架构"></a>2. 分布式架构</h3><ol>
+<li>单体</li>
+<li>SOA</li>
+<li>微服务</li>
+<li>Sidecar</li>
+<li>Service Mesh</li>
+<li>云原生</li>
+</ol>
+<h3 id="3-分布式系统基础服务"><a href="#3-分布式系统基础服务" class="headerlink" title="3. 分布式系统基础服务"></a>3. 分布式系统基础服务</h3><ol>
+<li>服务网关(负载均衡)</li>
+<li>配置中心</li>
+<li>注册中心</li>
+<li>服务通信<ol>
+<li>同步 VS 异步</li>
+<li>pull VS push</li>
+<li>HTTP</li>
+<li>RPC</li>
+<li>消息队列</li>
+</ol>
+</li>
+<li>分布式存储<ol>
+<li>缓存</li>
+<li>Redis</li>
+<li>ElasticSearch</li>
+<li>MongoDB</li>
+<li>MySQL</li>
+</ol>
+</li>
+<li>分布式计算</li>
+<li>文件系统</li>
+</ol>
+<h3 id="4-分布式系统服务设计"><a href="#4-分布式系统服务设计" class="headerlink" title="4. 分布式系统服务设计"></a>4. 分布式系统服务设计</h3><ol>
+<li>分布式锁</li>
+<li>分布式事务</li>
+<li>服务控制<ol>
+<li>服务发现</li>
+<li>限流</li>
+<li>降级</li>
+<li>熔断</li>
+<li>隔离</li>
+<li>重试</li>
+</ol>
+</li>
+<li>服务设计<ol>
+<li>幂等性</li>
+<li>无状态</li>
+<li>顺序性</li>
+<li>授权</li>
+<li>测试</li>
+</ol>
+</li>
+<li>性能优化</li>
+</ol>
+<h3 id="5-分布式系统运维"><a href="#5-分布式系统运维" class="headerlink" title="5. 分布式系统运维"></a>5. 分布式系统运维</h3><ol>
+<li>监控<ol>
+<li>机器监控</li>
+<li>中间件监控</li>
+<li>应用监控</li>
+<li>链路监控</li>
+</ol>
+</li>
+<li>压测</li>
+<li>部署</li>
+<li>故障恢复</li>
+</ol>
+<h3 id="6-软件架构设计思想"><a href="#6-软件架构设计思想" class="headerlink" title="6. 软件架构设计思想"></a>6. 软件架构设计思想</h3><ol>
+<li>瀑布流</li>
+<li>敏捷设计</li>
+<li>领域驱动设计</li>
+<li>DevOps</li>
+</ol>
+<h3 id="7-DevOps"><a href="#7-DevOps" class="headerlink" title="7.DevOps"></a>7.DevOps</h3><ol>
+<li>思想</li>
+<li>基础设施与工具<ol>
+<li>工具</li>
+<li>容器</li>
+<li>服务编排</li>
+</ol>
+</li>
+<li>测试</li>
+<li>持续集成</li>
+<li>持续交付</li>
+<li>部署</li>
+</ol>
+<h3 id="8-弹性云"><a href="#8-弹性云" class="headerlink" title="8. 弹性云"></a>8. 弹性云</h3><ol>
+<li>容器</li>
+<li>服务编排</li>
+<li>资源调度<ol>
+<li>弹性伸缩</li>
+<li>网络管理</li>
+<li>故障排查</li>
+</ol>
+</li>
+</ol>
+<h3 id="9-行业"><a href="#9-行业" class="headerlink" title="9. 行业"></a>9. 行业</h3><ol>
+<li>电商</li>
+<li>银行金融</li>
+</ol>
+
       
     </div>
     
@@ -421,144 +515,36 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://jiwliu.github.io/2019/11/25/hello-geek-time/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="jiwliu">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/weichat.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="geek time">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/11/25/hello-geek-time/" itemprop="url">hello geek time</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-11-25T16:01:33+08:00">
-                2019-11-25
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/%E5%88%86%E5%B8%83%E5%BC%8F%E5%8E%9F%E7%90%86/" rel="tag"># 分布式原理</a>
           
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2019/11/25/hello-geek-time/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2019/11/25/hello-geek-time/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="开篇"><a href="#开篇" class="headerlink" title="开篇"></a>开篇</h2>
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
       
 
       
       
-        <div class="post-eof"></div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/11/25/hello-geek-time/" rel="next" title="hello geek time">
+                <i class="fa fa-chevron-left"></i> hello geek time
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
       
     </footer>
   </div>
@@ -568,10 +554,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -579,6 +566,20 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -599,8 +600,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -674,6 +684,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#分布式系统设计知识点"><span class="nav-number">1.</span> <span class="nav-text">分布式系统设计知识点</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-理论"><span class="nav-number">1.1.</span> <span class="nav-text">1. 理论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-分布式架构"><span class="nav-number">1.2.</span> <span class="nav-text">2. 分布式架构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-分布式系统基础服务"><span class="nav-number">1.3.</span> <span class="nav-text">3. 分布式系统基础服务</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-分布式系统服务设计"><span class="nav-number">1.4.</span> <span class="nav-text">4. 分布式系统服务设计</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-分布式系统运维"><span class="nav-number">1.5.</span> <span class="nav-text">5. 分布式系统运维</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-软件架构设计思想"><span class="nav-number">1.6.</span> <span class="nav-text">6. 软件架构设计思想</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-DevOps"><span class="nav-number">1.7.</span> <span class="nav-text">7.DevOps</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-弹性云"><span class="nav-number">1.8.</span> <span class="nav-text">8. 弹性云</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-行业"><span class="nav-number">1.9.</span> <span class="nav-text">9. 行业</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -807,6 +833,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -824,6 +854,18 @@
       <script id="dsq-count-scr" src="https://nobody.disqus.com/count.js" async></script>
     
 
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'https://jiwliu.github.io/2019/11/26/%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F%E7%9F%A5%E8%AF%86%E7%82%B9%E6%B1%87%E6%80%BB/';
+          this.page.identifier = '2019/11/26/分布式系统知识点汇总/';
+          this.page.title = '分布式系统知识点汇总';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://nobody.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
     
 
   
